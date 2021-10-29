@@ -1,6 +1,8 @@
+import './trans.css';
+
 function TransTab({ children }) {
   return (
-    <table className="transaction-history">
+    <table>
       <thead>
         <tr>
           <th>Type</th>

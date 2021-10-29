@@ -1,12 +1,13 @@
 import propTypes from 'prop-types';
+import s from './Statistic.module.css';
 
 function Satistical(props) {
   const { label, percentage } = props;
   return (
-    <div className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
-    </div>
+    <>
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage}%</span>
+    </>
   );
 }
 

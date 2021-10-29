@@ -1,11 +1,12 @@
 import propTypes from 'prop-types';
 import FriendMarkup from './friendMarkup';
+import s from './Friends.module.css';
 
 function friendList({ items }) {
   return (
     <ul>
       {items.map(item => (
-        <li className="item" key={item.id}>
+        <li className={s.item} key={item.id}>
           <FriendMarkup name={item.name} avatar={item.avatar} isOnline={item.isOnline} />
         </li>
       ))}

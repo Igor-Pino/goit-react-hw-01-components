@@ -1,13 +1,16 @@
 import propTypes from 'prop-types';
+import s from './Friends.module.css';
+import './friend.css';
 
 export default function FriendMarkup(props) {
   const { name, avatar, isOnline } = props;
+
   return (
-    <div>
-      <span className="status">{isOnline && 'online'}</span>
-      <img className="avatar" src={avatar} alt="{name}" width="48" />
-      <p className="name">{name}</p>
-    </div>
+    <>
+      <span className={`status status-${isOnline && 'offline'}`}></span>
+      <img className={s.avatar} src={avatar} alt="{name}" width="48" />
+      <p className={s.name}>{name}</p>
+    </>
   );
 }
 

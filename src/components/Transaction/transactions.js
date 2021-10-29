@@ -1,4 +1,5 @@
 import propType from 'prop-types';
+import './trans.css';
 
 function Transaction(props) {
   const { type, amount, currency } = props;

@@ -1,4 +1,5 @@
 import propTypes from 'prop-types';
+import './trans.css';
 import TransactionMarkup from './transactions';
 
 function TransList({ items }) {
